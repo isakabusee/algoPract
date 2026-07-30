@@ -11,4 +11,5 @@ const possibleCombinations = (str) => {
     }
     return combinations;
 };
-console.log(possibleCombinations('abcd')); // Output: ['abc', 'acb', 'bac', 'bca', 'cab', 'cba']
+possibleCombinations('abcd'); // Output: ['abc', 'acb', 'bac', 'bca', 'cab', 'cba']
+

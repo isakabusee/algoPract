@@ -65,3 +65,4 @@ const smallestPalindromicPermutation = (s) => {
 console.log(smallestPalindromicPermutation("z")); // Output: "z"
 console.log(smallestPalindromicPermutation("babab")); // Output: "abbba"
 console.log(smallestPalindromicPermutation("daccad")); // Output: "acddca"
+
