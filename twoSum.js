@@ -3,17 +3,44 @@
 
 // You can return the answer in any order.
 
-const twoSum = (nums, target) => {
-    const obj = {};
-    for (let i=0; i<nums.length; i++) {
-        const char = nums[i];
-        const differences = target - char;
-        if(obj[char] != null ){
-            return [obj[char], i];
-        } else {
-            obj[differences] = i;
-        }
-    }
+// const twoSum =(ar, target)=> {
+//     const obj = {};
+//     for(let i=0; i<ar.length; i++){
+//         let num = ar[i];
+//         const differences = target - num;
+//         if(obj[num] !=null){
+//             return [obj[num], i];
+//         } else {
+//             obj[differences] = i;
+//         }
+//     }
+// }
+// console.log(twoSum([3,5,6],9))
+
+// const addAllNums = (arr) => {
+//     let sum = 0;
+//     for(let i=0; i<arr.length; i++){
+//         sum += arr[i];
+//     }
+//     return sum;
+// }
+// console.log(addAllNums([3,6,7,4,10]));
+
+// const reverseStr = (st) => {
+//     let newStr = "";
+//     for(let i=st.length-1; i>=0; i--){
+//         newStr += st[i]; 
+//     }
+//     return newStr;
+// }
+// console.log(reverseStr("hello there!"))
+
+// const reverStr = (st) => {
+//   return [...st].reverse().join(" ");
+// }
+// console.log(reverStr("hey there!"))
+
+const capitalizeLetters = (str) => {
+    return str.split(" ").map((str) => str[0].toUpperCase() + str.slice(1)).join(" ");
 }
-console.log(twoSum([2,7,11,15], 9)); // Output: [0, 1]
-console.log(twoSum([3,2,4], 6)); // Output: [1, 2]
+console.log(capitalizeLetters("the good book the bible"))
